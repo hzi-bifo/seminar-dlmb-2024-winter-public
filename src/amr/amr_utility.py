@@ -97,7 +97,7 @@ def load_gene_data(folder, dataset, gene):
         pathogens_tt = []
         for g, seq in pathogen_name_to_seq.items():
             if g in pathogen_name_to_label:
-                pathogens_tt.append((g, seq, pathogen_name_to_label[g]))
+                pathogens_tt.append((g, seq.upper(), pathogen_name_to_label[g]))
         pathogens[tt] = pathogens_tt
 
     # print(pathogens)
