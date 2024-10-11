@@ -38,7 +38,7 @@ def create_gene_datasets(prefix_data_folder, output_data_folder):
 
 
     for ds_name, ds_values in data_files.items():
-        print(ds_name)
+        # print(ds_name)
         gene_sequences_tt = {}
         wc_tt = {}
         gene_wc_tt = {}
@@ -56,8 +56,8 @@ def create_gene_datasets(prefix_data_folder, output_data_folder):
             gene_wc_tt[var_dest_folder] = {seq_gene:len(seq_name_seq) for seq_gene, seq_name_seq in gene_sequences.items()}
 
         gene_rich_set = set(gene_with_high_incidence(gene_wc_tt["test"], wc_tt["test"])) & set(gene_with_high_incidence(gene_wc_tt["train"], wc_tt["train"]))
-        for gr in gene_rich_set:
-            print(gr, gene_wc_tt["train"][gr], wc_tt["train"], gene_wc_tt["test"][gr], wc_tt["test"])
+        # for gr in gene_rich_set:
+        #     print(gr, gene_wc_tt["train"][gr], wc_tt["train"], gene_wc_tt["test"][gr], wc_tt["test"])
         for var_seq_name, var_label_name, var_dest_folder in [("train_seq", "train_label", "train"), ("test_seq", "test_label", "test")]:
             gene_sequences = gene_sequences_tt[var_dest_folder]
             newpath = output_data_folder + "/" + ds_name + "/" + var_dest_folder + "/"
