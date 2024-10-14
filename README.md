@@ -14,4 +14,4 @@ Materials for the "Seminar: Deep Learning for Molecular Biology" on Winter 2024 
 
 # References
 * [Seminar description on HZI website](https://www.helmholtz-hzi.de/en/research/research-groups/details/computational-biology-for-infection-research/#workshops)
-* [Kick-ff meeting slides](DLS-TUBS-2024-winter -- kick off meeting.pdf)
+* [Kick-ff meeting slides](<DLS-TUBS-2024-winter -- kick off meeting.pdf>)
